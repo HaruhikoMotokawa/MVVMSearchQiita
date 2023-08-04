@@ -7,14 +7,19 @@ enum APIError: Error {
     case getItems
 }
 
-final class QiitaAPI {
+protocol QiitaAPIProtocol {
+    func postAccessToken(code: String, completion: ((Result<QiitaAccessTokenModel, Error>) -> Void)?)
+    var qiitaState: String { get }
+}
+
+final class QiitaAPI: QiitaAPIProtocol {
     static let shared = QiitaAPI()
     private init() {}
     // 接続先の大元、親プログラム
     private let host = "https://qiita.com/api/v2"
     // 登録されたAPIクライアント（アプリの開発者）のIDで４０桁１６進数
-    private let clientID = "e24cf0df2406166dcc9b7c96da2fc3ef579afc98"
-    private let clientSecret = "7cf44190613bd5754508989a7945c4349eaf5423"
+    private let clientID = "f5f6e27a991d456192f070d1b09a15dd4082fbb0"
+    private let clientSecret = "ab983b283d0413d6838e9fff98e81a800a55bc1e"
     let qiitaState = "bb17785d811bb1913ef54b0a7657de780defaa2d"
 
     // JSON形式のデータをSwiftに変換する（デコード）

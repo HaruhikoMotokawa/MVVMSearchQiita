@@ -16,6 +16,10 @@ final class Router {
         guard let vc = UIStoryboard(name: "Login", bundle: nil).instantiateInitialViewController() as? LoginViewController else {
             return nil
         }
+        // presenterとvcを繋ぐ
+        let presenter = LoginPresenter(output: vc)
+        vc.inject(presenter: presenter)
+
         self.loginViewController = vc
         let nav = UINavigationController(rootViewController: vc)
         window.rootViewController = nav
@@ -25,14 +29,18 @@ final class Router {
 
     // Searchに遷移
     internal func showSearch(from: UIViewController) {
-        guard let toVC = UIStoryboard(name: "Search", bundle: nil).instantiateInitialViewController() else { return }
+        guard let toVC = UIStoryboard(name: "Search", bundle: nil).instantiateInitialViewController() as? SearchViewController else { return }
+        // presenterとvcを繋ぐ
+        let presenter = SearchPresenter(output: toVC)
+        toVC.inject(presenter: presenter)
         show(from: from, to: toVC)
     }
 
     // Webに遷移
     internal func showWeb(from: UIViewController, qiitaItemModel: QiitaItemModel) {
         guard let toVC = UIStoryboard(name: "Web", bundle: nil).instantiateInitialViewController() as? WebViewController else { return }
-        toVC.configure(qiitaItemModel: qiitaItemModel)
+        let presenter = WebPresenter(output: toVC, qiitaItem: qiitaItemModel)
+        toVC.inject(presenter: presenter)
         show(from: from, to: toVC)
     }
 }

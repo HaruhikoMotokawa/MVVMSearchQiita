@@ -1,7 +1,11 @@
 # 概要
 
 このリポジトリーはポートフォリオで製作したアプリのリポジトリです。
-主な機能は以下の通りです。
+尚、このアプリの主目的は**MVPアーキテクチャで作成することです。**
+アプリの機能は別のポートフォリオで作成したアプリ「SearchQiita」と同じです。
+SearchQiitaのリポジトリ→　https://github.com/HaruhikoMotokawa/SearchQiita.git
+
+SearchQiitaの基本機能は以下の通りです。
 
 - SwiftPackageManagerを使ってライブラリを導入
   - Lotti

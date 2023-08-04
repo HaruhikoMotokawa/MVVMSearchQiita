@@ -25,18 +25,20 @@
 		7819664F2A70F9B90015C89B /* login.json in Resources */ = {isa = PBXBuildFile; fileRef = 7819664E2A70F9B90015C89B /* login.json */; };
 		781966522A710C440015C89B /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 781966502A710C440015C89B /* CustomCell.swift */; };
 		781966532A710C440015C89B /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 781966512A710C440015C89B /* CustomCell.xib */; };
+		782A1FBC2A78E5E500C8704A /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A1FBB2A78E5E500C8704A /* LoginPresenter.swift */; };
+		782A1FC02A7A4E7200C8704A /* SearchPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A1FBF2A7A4E7200C8704A /* SearchPresenter.swift */; };
+		782A1FC42A7CB38C00C8704A /* WebPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782A1FC32A7CB38C00C8704A /* WebPresenter.swift */; };
 		7873083A2A777DBD004539A6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 787308392A777DBD004539A6 /* WebViewController.swift */; };
 		7873083C2A777DD6004539A6 /* Web.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7873083B2A777DD6004539A6 /* Web.storyboard */; };
 		7877357B2A750C32000069F9 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 7877357A2A750C32000069F9 /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		781966192A70C6CE0015C89B /* SearchQiita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SearchQiita.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		781966192A70C6CE0015C89B /* MVPSearchQiita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPSearchQiita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7819661C2A70C6CE0015C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7819661E2A70C6CE0015C89B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		781966252A70C6CF0015C89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		781966282A70C6CF0015C89B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		7819662A2A70C6CF0015C89B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		781966302A70C71B0015C89B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		781966322A70C75A0015C89B /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		781966342A70C7B10015C89B /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		7819664E2A70F9B90015C89B /* login.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = login.json; sourceTree = "<group>"; };
 		781966502A710C440015C89B /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		781966512A710C440015C89B /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		782A1FB72A78E10C00C8704A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		782A1FBB2A78E5E500C8704A /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		782A1FBF2A7A4E7200C8704A /* SearchPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchPresenter.swift; sourceTree = "<group>"; };
+		782A1FC32A7CB38C00C8704A /* WebPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPresenter.swift; sourceTree = "<group>"; };
 		787308392A777DBD004539A6 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7873083B2A777DD6004539A6 /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -70,7 +76,7 @@
 		781966102A70C6CE0015C89B = {
 			isa = PBXGroup;
 			children = (
-				7819661B2A70C6CE0015C89B /* SearchQiita */,
+				7819661B2A70C6CE0015C89B /* MVPSearchQiita */,
 				7819661A2A70C6CE0015C89B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -78,12 +84,12 @@
 		7819661A2A70C6CE0015C89B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				781966192A70C6CE0015C89B /* SearchQiita.app */,
+				781966192A70C6CE0015C89B /* MVPSearchQiita.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7819661B2A70C6CE0015C89B /* SearchQiita */ = {
+		7819661B2A70C6CE0015C89B /* MVPSearchQiita */ = {
 			isa = PBXGroup;
 			children = (
 				781966362A70D0420015C89B /* Delegate */,
@@ -94,11 +100,11 @@
 				781966462A70F6500015C89B /* Search */,
 				7873083D2A777DDF004539A6 /* Web */,
 				781966252A70C6CF0015C89B /* Assets.xcassets */,
+				782A1FB72A78E10C00C8704A /* Info.plist */,
 				7819664E2A70F9B90015C89B /* login.json */,
 				781966272A70C6CF0015C89B /* LaunchScreen.storyboard */,
-				7819662A2A70C6CF0015C89B /* Info.plist */,
 			);
-			path = SearchQiita;
+			path = MVPSearchQiita;
 			sourceTree = "<group>";
 		};
 		781966362A70D0420015C89B /* Delegate */ = {
@@ -122,8 +128,8 @@
 		781966382A70D0780015C89B /* Login */ = {
 			isa = PBXGroup;
 			children = (
-				781966302A70C71B0015C89B /* LoginViewController.swift */,
-				781966322A70C75A0015C89B /* Login.storyboard */,
+				782A1FBA2A78E59D00C8704A /* Presenter */,
+				782A1FB92A78E4AA00C8704A /* ViewController */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -148,19 +154,70 @@
 		781966462A70F6500015C89B /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				782A1FBE2A7A4E4B00C8704A /* Presenter */,
+				782A1FBD2A7A4E3700C8704A /* ViewController */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		782A1FB92A78E4AA00C8704A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				781966302A70C71B0015C89B /* LoginViewController.swift */,
+				781966322A70C75A0015C89B /* Login.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		782A1FBA2A78E59D00C8704A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				782A1FBB2A78E5E500C8704A /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		782A1FBD2A7A4E3700C8704A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
 				781966472A70F6820015C89B /* SearchViewController.swift */,
 				781966492A70F6990015C89B /* Search.storyboard */,
 				781966502A710C440015C89B /* CustomCell.swift */,
 				781966512A710C440015C89B /* CustomCell.xib */,
 			);
-			path = Search;
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		782A1FBE2A7A4E4B00C8704A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				782A1FBF2A7A4E7200C8704A /* SearchPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		782A1FC12A7CB36000C8704A /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				787308392A777DBD004539A6 /* WebViewController.swift */,
+				7873083B2A777DD6004539A6 /* Web.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		782A1FC22A7CB37200C8704A /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				782A1FC32A7CB38C00C8704A /* WebPresenter.swift */,
+			);
+			path = Presenter;
 			sourceTree = "<group>";
 		};
 		7873083D2A777DDF004539A6 /* Web */ = {
 			isa = PBXGroup;
 			children = (
-				787308392A777DBD004539A6 /* WebViewController.swift */,
-				7873083B2A777DD6004539A6 /* Web.storyboard */,
+				782A1FC22A7CB37200C8704A /* Presenter */,
+				782A1FC12A7CB36000C8704A /* ViewController */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -168,9 +225,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		781966182A70C6CE0015C89B /* SearchQiita */ = {
+		781966182A70C6CE0015C89B /* MVPSearchQiita */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "SearchQiita" */;
+			buildConfigurationList = 7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "MVPSearchQiita" */;
 			buildPhases = (
 				781966152A70C6CE0015C89B /* Sources */,
 				781966162A70C6CE0015C89B /* Frameworks */,
@@ -180,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = SearchQiita;
+			name = MVPSearchQiita;
 			packageProductDependencies = (
 				781966412A70D2440015C89B /* Alamofire */,
 				7819664C2A70F8F70015C89B /* Lottie */,
 				7877357A2A750C32000069F9 /* Kingfisher */,
 			);
 			productName = SearchQiita;
-			productReference = 781966192A70C6CE0015C89B /* SearchQiita.app */;
+			productReference = 781966192A70C6CE0015C89B /* MVPSearchQiita.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -205,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 781966142A70C6CE0015C89B /* Build configuration list for PBXProject "SearchQiita" */;
+			buildConfigurationList = 781966142A70C6CE0015C89B /* Build configuration list for PBXProject "MVPSearchQiita" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -223,7 +280,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				781966182A70C6CE0015C89B /* SearchQiita */,
+				781966182A70C6CE0015C89B /* MVPSearchQiita */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +307,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				782A1FBC2A78E5E500C8704A /* LoginPresenter.swift in Sources */,
+				782A1FC42A7CB38C00C8704A /* WebPresenter.swift in Sources */,
 				781966452A70D2A90015C89B /* UserDefaults+.swift in Sources */,
 				7873083A2A777DBD004539A6 /* WebViewController.swift in Sources */,
 				7819663B2A70D0CC0015C89B /* QiitaAccessTokenModel.swift in Sources */,
@@ -258,6 +317,7 @@
 				781966482A70F6820015C89B /* SearchViewController.swift in Sources */,
 				7819661D2A70C6CE0015C89B /* AppDelegate.swift in Sources */,
 				7819663D2A70D10D0015C89B /* QiitaItemModel.swift in Sources */,
+				782A1FC02A7A4E7200C8704A /* SearchPresenter.swift in Sources */,
 				7819663F2A70D1AD0015C89B /* QiitaAPI.swift in Sources */,
 				781966312A70C71B0015C89B /* LoginViewController.swift in Sources */,
 				7819661F2A70C6CE0015C89B /* SceneDelegate.swift in Sources */,
@@ -401,7 +461,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQB9XDMF5W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SearchQiita/Info.plist;
+				INFOPLIST_FILE = MVPSearchQiita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -411,7 +471,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.SearchQiita;
+				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.MVPSearchQiita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -428,7 +488,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQB9XDMF5W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = SearchQiita/Info.plist;
+				INFOPLIST_FILE = MVPSearchQiita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -438,7 +498,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.SearchQiita;
+				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.MVPSearchQiita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -449,7 +509,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		781966142A70C6CE0015C89B /* Build configuration list for PBXProject "SearchQiita" */ = {
+		781966142A70C6CE0015C89B /* Build configuration list for PBXProject "MVPSearchQiita" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7819662B2A70C6CF0015C89B /* Debug */,
@@ -458,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "SearchQiita" */ = {
+		7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "MVPSearchQiita" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7819662E2A70C6CF0015C89B /* Debug */,

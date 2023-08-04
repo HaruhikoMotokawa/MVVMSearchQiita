@@ -1,6 +1,6 @@
 //
 //  SceneDelegate.swift
-//  SearchQiita
+//  MVPSearchQiita
 //
 //  Created by 本川晴彦 on 2023/07/26.
 //
