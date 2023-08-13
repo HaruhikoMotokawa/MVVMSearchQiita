@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		352FDD152AC8E3F42558E43A /* Pods_MVVMSearchQiita.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E97610809FFB185E49FA5C67 /* Pods_MVVMSearchQiita.framework */; };
 		7819661D2A70C6CE0015C89B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819661C2A70C6CE0015C89B /* AppDelegate.swift */; };
 		7819661F2A70C6CE0015C89B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7819661E2A70C6CE0015C89B /* SceneDelegate.swift */; };
 		781966262A70C6CF0015C89B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 781966252A70C6CF0015C89B /* Assets.xcassets */; };
@@ -34,6 +35,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		52EC0C1076234A1191D676B7 /* Pods-MVVMSearchQiita.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSearchQiita.debug.xcconfig"; path = "Target Support Files/Pods-MVVMSearchQiita/Pods-MVVMSearchQiita.debug.xcconfig"; sourceTree = "<group>"; };
+		6F24E456CD7525B358039B27 /* Pods-MVVMSearchQiita.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMSearchQiita.release.xcconfig"; path = "Target Support Files/Pods-MVVMSearchQiita/Pods-MVVMSearchQiita.release.xcconfig"; sourceTree = "<group>"; };
 		781966192A70C6CE0015C89B /* MVVMSearchQiita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSearchQiita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7819661C2A70C6CE0015C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7819661E2A70C6CE0015C89B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +60,7 @@
 		782A1FC32A7CB38C00C8704A /* WebPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebPresenter.swift; sourceTree = "<group>"; };
 		787308392A777DBD004539A6 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		7873083B2A777DD6004539A6 /* Web.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Web.storyboard; sourceTree = "<group>"; };
+		E97610809FFB185E49FA5C67 /* Pods_MVVMSearchQiita.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVMSearchQiita.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,17 +71,29 @@
 				7877357B2A750C32000069F9 /* Kingfisher in Frameworks */,
 				781966422A70D2440015C89B /* Alamofire in Frameworks */,
 				7819664D2A70F8F70015C89B /* Lottie in Frameworks */,
+				352FDD152AC8E3F42558E43A /* Pods_MVVMSearchQiita.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		15FEF7742F31345B99ADAEC2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				52EC0C1076234A1191D676B7 /* Pods-MVVMSearchQiita.debug.xcconfig */,
+				6F24E456CD7525B358039B27 /* Pods-MVVMSearchQiita.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		781966102A70C6CE0015C89B = {
 			isa = PBXGroup;
 			children = (
 				7819661B2A70C6CE0015C89B /* MVVMSearchQiita */,
 				7819661A2A70C6CE0015C89B /* Products */,
+				15FEF7742F31345B99ADAEC2 /* Pods */,
+				A42769630491BF3BBFB85B05 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -222,6 +238,14 @@
 			path = Web;
 			sourceTree = "<group>";
 		};
+		A42769630491BF3BBFB85B05 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E97610809FFB185E49FA5C67 /* Pods_MVVMSearchQiita.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -229,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "MVVMSearchQiita" */;
 			buildPhases = (
+				1F03FAF214385A440B64D7DB /* [CP] Check Pods Manifest.lock */,
 				781966152A70C6CE0015C89B /* Sources */,
 				781966162A70C6CE0015C89B /* Frameworks */,
 				781966172A70C6CE0015C89B /* Resources */,
+				EBBD30F07E7DBC4A8C7F136A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -301,6 +327,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1F03FAF214385A440B64D7DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVMSearchQiita-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EBBD30F07E7DBC4A8C7F136A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMSearchQiita/Pods-MVVMSearchQiita-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVMSearchQiita/Pods-MVVMSearchQiita-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVMSearchQiita/Pods-MVVMSearchQiita-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		781966152A70C6CE0015C89B /* Sources */ = {
@@ -454,6 +522,7 @@
 		};
 		7819662E2A70C6CF0015C89B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 52EC0C1076234A1191D676B7 /* Pods-MVVMSearchQiita.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -461,7 +530,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQB9XDMF5W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MVPSearchQiita/Info.plist;
+				INFOPLIST_FILE = MVVMSearchQiita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -471,7 +540,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.MVPSearchQiita;
+				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.MVVMSearchQiita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -481,6 +550,7 @@
 		};
 		7819662F2A70C6CF0015C89B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F24E456CD7525B358039B27 /* Pods-MVVMSearchQiita.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -488,7 +558,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YQB9XDMF5W;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = MVPSearchQiita/Info.plist;
+				INFOPLIST_FILE = MVVMSearchQiita/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -498,7 +568,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.MVPSearchQiita;
+				PRODUCT_BUNDLE_IDENTIFIER = com.motoharu.MVVMSearchQiita;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
