@@ -34,7 +34,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		781966192A70C6CE0015C89B /* MVPSearchQiita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVPSearchQiita.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		781966192A70C6CE0015C89B /* MVVMSearchQiita.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSearchQiita.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7819661C2A70C6CE0015C89B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7819661E2A70C6CE0015C89B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		781966252A70C6CF0015C89B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -76,7 +76,7 @@
 		781966102A70C6CE0015C89B = {
 			isa = PBXGroup;
 			children = (
-				7819661B2A70C6CE0015C89B /* MVPSearchQiita */,
+				7819661B2A70C6CE0015C89B /* MVVMSearchQiita */,
 				7819661A2A70C6CE0015C89B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -84,12 +84,12 @@
 		7819661A2A70C6CE0015C89B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				781966192A70C6CE0015C89B /* MVPSearchQiita.app */,
+				781966192A70C6CE0015C89B /* MVVMSearchQiita.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7819661B2A70C6CE0015C89B /* MVPSearchQiita */ = {
+		7819661B2A70C6CE0015C89B /* MVVMSearchQiita */ = {
 			isa = PBXGroup;
 			children = (
 				781966362A70D0420015C89B /* Delegate */,
@@ -104,7 +104,7 @@
 				7819664E2A70F9B90015C89B /* login.json */,
 				781966272A70C6CF0015C89B /* LaunchScreen.storyboard */,
 			);
-			path = MVPSearchQiita;
+			path = MVVMSearchQiita;
 			sourceTree = "<group>";
 		};
 		781966362A70D0420015C89B /* Delegate */ = {
@@ -225,9 +225,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		781966182A70C6CE0015C89B /* MVPSearchQiita */ = {
+		781966182A70C6CE0015C89B /* MVVMSearchQiita */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "MVPSearchQiita" */;
+			buildConfigurationList = 7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "MVVMSearchQiita" */;
 			buildPhases = (
 				781966152A70C6CE0015C89B /* Sources */,
 				781966162A70C6CE0015C89B /* Frameworks */,
@@ -237,14 +237,14 @@
 			);
 			dependencies = (
 			);
-			name = MVPSearchQiita;
+			name = MVVMSearchQiita;
 			packageProductDependencies = (
 				781966412A70D2440015C89B /* Alamofire */,
 				7819664C2A70F8F70015C89B /* Lottie */,
 				7877357A2A750C32000069F9 /* Kingfisher */,
 			);
 			productName = SearchQiita;
-			productReference = 781966192A70C6CE0015C89B /* MVPSearchQiita.app */;
+			productReference = 781966192A70C6CE0015C89B /* MVVMSearchQiita.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -262,7 +262,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 781966142A70C6CE0015C89B /* Build configuration list for PBXProject "MVPSearchQiita" */;
+			buildConfigurationList = 781966142A70C6CE0015C89B /* Build configuration list for PBXProject "MVVMSearchQiita" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -280,7 +280,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				781966182A70C6CE0015C89B /* MVPSearchQiita */,
+				781966182A70C6CE0015C89B /* MVVMSearchQiita */,
 			);
 		};
 /* End PBXProject section */
@@ -509,7 +509,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		781966142A70C6CE0015C89B /* Build configuration list for PBXProject "MVPSearchQiita" */ = {
+		781966142A70C6CE0015C89B /* Build configuration list for PBXProject "MVVMSearchQiita" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7819662B2A70C6CF0015C89B /* Debug */,
@@ -518,7 +518,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "MVPSearchQiita" */ = {
+		7819662D2A70C6CF0015C89B /* Build configuration list for PBXNativeTarget "MVVMSearchQiita" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				7819662E2A70C6CF0015C89B /* Debug */,
