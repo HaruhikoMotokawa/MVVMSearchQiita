@@ -1,7 +1,7 @@
 # 概要
 
 このリポジトリーはポートフォリオで製作したアプリのリポジトリです。
-尚、このアプリの主目的は**MVPアーキテクチャで作成することです。**
+尚、このアプリの主目的は**MVVMアーキテクチャとRxSwiftで作成することです。**
 アプリの機能は別のポートフォリオで作成したアプリ「SearchQiita」と同じです。
 SearchQiitaのリポジトリ→　https://github.com/HaruhikoMotokawa/SearchQiita.git
 
